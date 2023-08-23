@@ -1,7 +1,7 @@
 import { AiFillInstagram, AiFillYoutube } from "react-icons/ai";
 
 import { FaSpotify, FaDeezer, FaSoundcloud } from "react-icons/fa";
-import perfiljoao from "../images/perfiljoao.png";
+import inestan from "../images/inestan.png";
 import logojoao from "../images/logojoao.jpg";
 
 import sympla from "../images/sympla.png";
@@ -22,7 +22,7 @@ export default function Page() {
         </a>
       </div>
       <div className="divjoao">
-        <img className="perfil" src={perfiljoao}></img>
+        <img className="perfil" src={inestan}></img>
         <div className="divlinks">
           <div className="links">
             <a

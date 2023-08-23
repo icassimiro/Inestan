@@ -1,5 +1,5 @@
 * {
-  font-family: monospace;
+  font-family: helvetica;
   animation: fadeInAnimation ease 4s;
 }
 @media screen and (max-width: 2000px) {
@@ -12,6 +12,17 @@
     }
   }
 
+  @keyframes initialimg {
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   a {
     text-decoration: none;
   }
@@ -30,15 +41,17 @@
   }
   .joao {
     width: 350px;
+    animation: initialimg 5s infinite;
   }
   .entrar {
     width: 300px;
     height: 4.5vh;
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 2px;
     border: none;
     border-radius: 5px;
     background-color: #151515;
+    font-weight: bold;
 
     color: whitesmoke;
   }
@@ -69,8 +82,8 @@
     display: flex;
 
     justify-content: center;
-    font-size: 19px;
-    letter-spacing: 5px;
+    font-size: 16px;
+    letter-spacing: 4px;
     background-color: #151515;
     height: 5.5vh;
     align-items: center;
@@ -82,11 +95,11 @@
   .divjoao {
     display: flex;
     align-items: center;
-    width: 94%;
+    width: 97%;
     gap: 15rem;
     justify-content: center;
 
-    height: 70vh;
+    height: 75vh;
     margin-top: 1rem;
   }
   .btnsympla {
@@ -105,39 +118,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: 3.5rem;
     margin-top: 3.5rem;
   }
-  .showtexttitle {
-    color: white;
-    display: flex;
 
-    justify-content: center;
-    font-size: 25px;
-    letter-spacing: 5px;
-
-    height: 5vh;
-    align-items: center;
-  }
   .socials {
     font-size: 32px;
   }
   .logopage {
     width: 150px;
     height: 10vh;
-    margin-left: 5rem;
+    margin-left: 4.5rem;
   }
 
   .divheaders {
     display: flex;
     align-items: center;
 
-    width: 100%;
+    width: 96%;
     justify-content: space-between;
     padding-top: 2rem;
   }
   .divsympla {
-    height: 12vh;
+    height: 10vh;
     width: 40%;
     align-items: center;
     display: flex;
@@ -148,9 +151,6 @@
   }
 }
 @media screen and (max-width: 1800px) {
-  .showtexttitle {
-    letter-spacing: 2px;
-  }
   .divsympla {
     width: 40%;
   }
@@ -161,24 +161,16 @@
   }
 }
 @media screen and (max-width: 1500px) {
-  .showtexttitle {
-    font-size: 23px;
-  }
   .perfil {
     height: 65vh;
     width: 500px;
   }
-  .links {
-    height: 66vh;
-  }
+
   .divsympla {
     width: 30%;
   }
 }
 @media screen and (max-width: 1400px) {
-  .showtexttitle {
-    font-size: 20px;
-  }
   .showtext {
     font-size: 17px;
   }
@@ -242,6 +234,8 @@
   }
   .divheaders {
     padding-top: 0rem;
+    height: 15vh;
+    width: 98%;
   }
   .pagediv {
     height: 165vh;
@@ -252,12 +246,9 @@
   .divjoao {
     height: 140vh;
   }
-  .divheaders {
-    height: 15vh;
-  }
+
   .divlinks {
     width: 100%;
-    padding-left: 1rem;
   }
 
   .divsympla {
@@ -266,9 +257,10 @@
   }
   .links {
     margin-top: 1rem;
+    margin-left: 1rem;
   }
   .showtext {
-    font-size: 16px;
+    font-size: 15px;
   }
   .joao {
     width: 250px;
@@ -281,9 +273,13 @@
   }
   .logopage {
     width: 110px;
+    margin-left: 3rem;
   }
   .sympla {
     width: 100px;
+  }
+  .divsympla {
+    height: 6vh;
   }
 }
 @media screen and (max-width: 414px) {
@@ -297,6 +293,9 @@
   }
 }
 @media screen and (max-width: 412px) {
+  .perfil {
+    width: 300px;
+  }
 }
 @media screen and (max-width: 390px) {
   .perfil {
@@ -310,11 +309,17 @@
   .perfil {
     width: 290px;
   }
-  .showtexttitle {
-    font-size: 17px;
-  }
+
   .showtext {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 375px) and (max-height: 667px) {
+  .perfil {
+    width: 230px;
+  }
+  .divsympla {
+    height: 7vh;
   }
 }
 @media screen and (max-width: 360px) {
@@ -327,13 +332,19 @@
   .socials {
     font-size: 27px;
   }
+  .entrar {
+    width: 230px;
+  }
+  .entrada {
+    width: 97%;
+  }
 }
 @media screen and (max-width: 320px) {
   .socials {
     font-size: 23px;
   }
-  .showtexttitle {
-    font-size: 15px;
+  .divsympla {
+    height: 9vh;
   }
 }
 @media screen and (max-width: 320px) and (max-height: 533px) {
@@ -348,13 +359,25 @@
 }
 @media screen and (max-width: 280px) {
   .perfil {
-    width: 220px;
+    width: 200px;
+    height: 35vh;
   }
-  .showtexttitle {
-    font-size: 13px;
-  }
+
   .showtext {
     font-size: 12px;
     width: 240px;
+  }
+  .logopage {
+    margin-left: 1.5rem;
+  }
+  .divsympla {
+    width: 80%;
+    height: 8vh;
+  }
+  .divlinks {
+    padding-left: 0.5rem;
+  }
+  .joao {
+    width: 180px;
   }
 }

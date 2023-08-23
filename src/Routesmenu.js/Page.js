@@ -25,7 +25,6 @@ export default function Page() {
         <img className="perfil" src={perfiljoao}></img>
         <div className="divlinks">
           <div className="links">
-            <h2 className="showtexttitle">REDES SOCIAIS E PLATAFORMAS</h2>
             <a
               target="_blank"
               href="https://www.instagram.com/djjoaodainestan/"
